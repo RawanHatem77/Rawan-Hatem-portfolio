@@ -1,0 +1,182 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #000000; 
+    color: #ebeaea; 
+    line-height: 1.6; 
+}
+/* Existing body and other styles remain unchanged */
+
+/* Existing body and other styles remain unchanged, but update any #ffffff references to #e0e0e0 if they appear elsewhere */
+
+header { 
+    background-color: #000000; 
+    color: #ebeaea; /* Changed from #ffffff to light gray */
+    padding: 40px 20px; 
+    border-bottom: 5px solid #81079C; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #81079C;
+    margin-right: -90px;
+}
+
+.header-text {
+    flex: 1;
+    text-align: center; /* Center all text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Ensure full centering */
+}
+
+.header-text h1 { 
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
+    color: #ebeaea; /* Updated color */
+    -webkit-text-stroke: 2.5px #81079C; /* Outline color and thickness */
+    text-stroke: 10px #81079C; /* Fallback for non-webkit browsers */
+}
+
+.header-text p { 
+    font-size: 1.2em; 
+    color: #81079C; 
+    margin-bottom: 10px;
+}
+
+.usp { 
+    font-style: italic; 
+    font-size: 1.3em; 
+    color: #ebeaea; /* Updated color */
+    -webkit-text-stroke: 1px #81079C; /* Outline color and thickness */
+    text-stroke: 0.5px #81079C; /* Fallback for non-webkit browsers */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .header-text {
+        text-align: center;
+    }
+}
+
+/* Rest of your CSS (sections, footer, etc.) remains the same, but scan for #ffffff and replace with #e0e0e0 if needed */
+
+/* Rest of your CSS (sections, footer, etc.) remains the same */
+.usp { 
+    font-style: italic; 
+    font-size: 1.3em; 
+    color: #ebeaea; 
+    text-align: center; 
+    margin: 20px 0; 
+}
+.container { 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+section { 
+    margin-bottom: 50px; 
+    padding: 20px; 
+    background-color: #111111; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(129, 7, 156, 0.3); 
+}
+h2 { 
+    color: #81079C; 
+    border-bottom: 2px solid #81079C; 
+    padding-bottom: 10px; 
+    font-size: 1.8em; 
+}
+ul { 
+    list-style-type: none; 
+    padding: 0; 
+}
+li { 
+    background-color: #222222; 
+    margin: 5px 0; 
+    padding: 10px; 
+    border-left: 5px solid #81079C; 
+}
+.project { 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    background-color: #222222; 
+    border-radius: 5px; 
+}
+.project h3 { 
+    color: #81079C; 
+}
+a { 
+    color: #81079C; 
+    text-decoration: none; 
+}
+a:hover { 
+    text-decoration: underline; 
+}
+.cta-button { 
+    display: inline-block; 
+    background-color: #81079C; 
+    color: #ebeaea; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-align: center; 
+    margin-top: 20px; 
+    transition: background-color 0.3s; 
+    border: none; 
+    cursor: pointer; 
+}
+.cta-button:hover { 
+    background-color: #000000; 
+    border: 1px solid #81079C; 
+}
+footer { 
+    text-align: center; 
+    padding: 20px; 
+    background-color: #000000; 
+    color: #ebeaea; 
+    border-top: 5px solid #81079C; 
+}
+/* Contact form styles */
+form { 
+    margin-top: 20px; 
+}
+label { 
+    display: block; 
+    margin-top: 10px; 
+    color: #81079C; 
+}
+input, textarea { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px; 
+    background-color: #222222; 
+    color: #ebeaea; 
+    border: 1px solid #81079C; 
+    border-radius: 5px; 
+}
+textarea { 
+    height: 100px; 
+}
