@@ -70,6 +70,7 @@ header {
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Ensure full centering */
+    padding-left: 70px; /* keeps text clear of the profile photo */
 }
 
 .header-text h1 {
@@ -130,6 +131,7 @@ header {
     }
     .header-text {
         text-align: center;
+        padding-left: 0;
     }
     .theme-toggle {
         margin: 20px auto 0;
