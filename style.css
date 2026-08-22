@@ -676,13 +676,13 @@ section{
 #experience{
   display:flex;
   flex-direction:column;
-  align-items:center;
+  align-items:stretch;
 }
 
 #experience .section-eyebrow,
-#experience .section-title {
-  width: 100%;
-  text-align: left;
+#experience .section-title{
+  width:100%;
+  text-align:left;
 }
 
 .exp-item{
@@ -692,7 +692,7 @@ section{
   padding:32px 0;
   border-top:1px solid var(--border);
   width:100%;
-  max-width:900px;
+  max-width:none;
 }
 
 .exp-logo{
@@ -745,13 +745,13 @@ section{
 #education{
   display:flex;
   flex-direction:column;
-  align-items:center;
+  align-items:stretch;
 }
 
 #education .section-eyebrow,
 #education .section-title{
   width:100%;
-  text-align:center;
+  text-align:left;
 }
 
 .edu-item{
@@ -761,7 +761,7 @@ section{
   padding:28px 0;
   border-top:1px solid var(--border);
   width:100%;
-  max-width:900px;
+  max-width:none;
 }
 
 .edu-item h4{
@@ -790,20 +790,20 @@ section{
 #languages{
   display:flex;
   flex-direction:column;
-  align-items:center;
+  align-items:stretch;
 }
 
 #languages .section-eyebrow,
 #languages .section-title{
   width:100%;
-  text-align:center;
+  text-align:left;
 }
 
 .lang-row{
   display:flex;
   flex-wrap:wrap;
   gap:12px;
-  justify-content:center;
+  justify-content:flex-start;
 }
 
 .lang-pill{
@@ -820,24 +820,24 @@ section{
 #contact{
   display:flex;
   flex-direction:column;
-  align-items:center;
+  align-items:stretch;
 }
 
 #contact .section-eyebrow,
 #contact .section-title{
   width:100%;
-  text-align:center;
+  text-align:left;
 }
 
 #contact > p{
-  text-align:center;
+  text-align:left;
   width:100%;
 }
 
 .contact-list{
   border-top:1px solid var(--border);
   width:100%;
-  max-width:900px;
+  max-width:none;
 }
 
 .contact-row{
