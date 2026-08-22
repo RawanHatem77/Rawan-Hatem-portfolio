@@ -691,3 +691,39 @@ body{position:relative; overflow-x:hidden;}
   .hero::after, .hero::before{animation:none;}
   * {transition-duration:.01ms !important; animation-duration:.01ms !important;}
 }
+/* ---------- LEFT ALIGNED SECTIONS ---------- */
+
+#experience,
+#education,
+#languages,
+#contact {
+  text-align: left;
+}
+
+#experience .section-eyebrow,
+#experience .section-title,
+#education .section-eyebrow,
+#education .section-title,
+#languages .section-eyebrow,
+#languages .section-title,
+#contact .section-eyebrow,
+#contact .section-title {
+  text-align: left;
+}
+
+/* Keep the content aligned to the left */
+#experience .exp-item,
+#education .edu-item,
+#languages .lang-row,
+#contact .contact-list {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Make these sections slightly narrower and left aligned */
+#experience > *,
+#education > *,
+#languages > *,
+#contact > * {
+  max-width: 900px;
+}
