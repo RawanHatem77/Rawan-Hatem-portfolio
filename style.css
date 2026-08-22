@@ -64,9 +64,7 @@ img{
 }
 
 
-/* =====================================================
-   NAVBAR
-   ===================================================== */
+/* ---------- NAVBAR ---------- */
 
 .navbar-wrap{
   position:sticky;
@@ -87,10 +85,7 @@ img{
   border-radius:999px;
   padding:10px 10px 10px 22px;
   gap:16px;
-  transition:
-    background .35s ease,
-    box-shadow .35s ease,
-    border-color .35s ease;
+  transition:background .35s ease, box-shadow .35s ease, border-color .35s ease;
 }
 
 .navbar.scrolled{
@@ -163,9 +158,7 @@ img{
 }
 
 
-/* =====================================================
-   HERO
-   ===================================================== */
+/* ---------- HERO ---------- */
 
 .hero{
   margin-top:8px;
@@ -175,7 +168,6 @@ img{
   min-height:420px;
   display:flex;
   align-items:center;
-
   background:
     radial-gradient(
       ellipse 60% 90% at 78% 30%,
@@ -241,7 +233,6 @@ img{
 }
 
 @media (max-width:800px){
-
   .hero-inner{
     flex-direction:column-reverse;
     padding:40px 24px;
@@ -263,12 +254,11 @@ img{
 }
 
 
-/* =====================================================
-   GENERIC SECTIONS
-   ===================================================== */
+/* ---------- SECTIONS GENERIC ---------- */
 
 section{
   padding:96px 0;
+  width:100%;
 }
 
 .section-eyebrow{
@@ -288,9 +278,7 @@ section{
 }
 
 
-/* =====================================================
-   ABOUT
-   ===================================================== */
+/* ---------- ABOUT ---------- */
 
 .about-grid{
   display:grid;
@@ -317,16 +305,13 @@ section{
 }
 
 @media (max-width:800px){
-
   .about-grid{
     grid-template-columns:1fr;
   }
 }
 
 
-/* =====================================================
-   SKILLS
-   ===================================================== */
+/* ---------- SKILLS ---------- */
 
 .skill-row{
   display:grid;
@@ -364,16 +349,13 @@ section{
 }
 
 @media (max-width:700px){
-
   .skill-row{
     grid-template-columns:1fr;
   }
 }
 
 
-/* =====================================================
-   SERVICES
-   ===================================================== */
+/* ---------- SERVICES ---------- */
 
 .services-grid{
   display:grid;
@@ -412,16 +394,13 @@ section{
 }
 
 @media (max-width:800px){
-
   .services-grid{
     grid-template-columns:1fr;
   }
 }
 
 
-/* =====================================================
-   PROJECTS
-   ===================================================== */
+/* ---------- PROJECTS ---------- */
 
 .project{
   margin-bottom:64px;
@@ -495,9 +474,7 @@ section{
 }
 
 
-/* =====================================================
-   TESTIMONIALS
-   ===================================================== */
+/* ---------- TESTIMONIALS ---------- */
 
 .testimonials-grid{
   display:grid;
@@ -688,7 +665,6 @@ section{
 }
 
 @media (max-width:850px){
-
   .testimonials-grid{
     grid-template-columns:1fr;
   }
@@ -698,12 +674,15 @@ section{
 /* ---------- EXPERIENCE ---------- */
 
 #experience{
-  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 #experience .section-eyebrow,
 #experience .section-title{
-  text-align:left;
+  width:100%;
+  text-align:center;
 }
 
 .exp-item{
@@ -714,7 +693,6 @@ section{
   border-top:1px solid var(--border);
   width:100%;
   max-width:900px;
-  margin:0 auto;
 }
 
 .exp-logo{
@@ -765,12 +743,15 @@ section{
 /* ---------- EDUCATION ---------- */
 
 #education{
-  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 #education .section-eyebrow,
 #education .section-title{
-  text-align:left;
+  width:100%;
+  text-align:center;
 }
 
 .edu-item{
@@ -781,7 +762,6 @@ section{
   border-top:1px solid var(--border);
   width:100%;
   max-width:900px;
-  margin:0 auto;
 }
 
 .edu-item h4{
@@ -808,19 +788,22 @@ section{
 /* ---------- LANGUAGES ---------- */
 
 #languages{
-  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 #languages .section-eyebrow,
 #languages .section-title{
-  text-align:left;
+  width:100%;
+  text-align:center;
 }
 
 .lang-row{
   display:flex;
   flex-wrap:wrap;
   gap:12px;
-  justify-content:flex-start;
+  justify-content:center;
 }
 
 .lang-pill{
@@ -835,23 +818,26 @@ section{
 /* ---------- CONTACT ---------- */
 
 #contact{
-  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 #contact .section-eyebrow,
 #contact .section-title{
-  text-align:left;
+  width:100%;
+  text-align:center;
 }
 
 #contact > p{
-  text-align:left;
+  text-align:center;
+  width:100%;
 }
 
 .contact-list{
   border-top:1px solid var(--border);
   width:100%;
   max-width:900px;
-  margin:0 auto;
 }
 
 .contact-row{
@@ -924,10 +910,6 @@ section{
   opacity:1;
 }
 
-/* =====================================================
-   FOOTER
-   ===================================================== */
-
 footer{
   text-align:center;
   padding:40px 24px;
@@ -936,9 +918,7 @@ footer{
 }
 
 
-/* =====================================================
-   DYNAMIC / MOTION LAYER
-   ===================================================== */
+/* ================= DYNAMIC / MOTION LAYER ================= */
 
 html{
   --mx:50%;
@@ -963,21 +943,17 @@ footer{
   inset:0;
   z-index:0;
   pointer-events:none;
-
   background:
     radial-gradient(
       650px circle at var(--mx) var(--my),
       rgba(185,166,255,0.09),
       transparent 70%
     );
-
   transition:background .25s ease;
 }
 
 
-/* =====================================================
-   HERO ANIMATED BLOBS
-   ===================================================== */
+/* ---------- HERO MOTION ---------- */
 
 .hero{
   position:relative;
@@ -989,14 +965,12 @@ footer{
   width:340px;
   height:340px;
   border-radius:50%;
-
   background:
     radial-gradient(
       circle,
       rgba(255,255,255,0.16),
       transparent 70%
     );
-
   top:-90px;
   right:80px;
   filter:blur(50px);
@@ -1010,14 +984,12 @@ footer{
   width:260px;
   height:260px;
   border-radius:50%;
-
   background:
     radial-gradient(
       circle,
       rgba(185,166,255,0.22),
       transparent 70%
     );
-
   bottom:-60px;
   left:10%;
   filter:blur(45px);
@@ -1026,7 +998,6 @@ footer{
 }
 
 @keyframes floatBlob{
-
   0%,100%{
     transform:translate(0,0) scale(1);
   }
@@ -1037,18 +1008,14 @@ footer{
 }
 
 
-/* =====================================================
-   SCROLL REVEAL
-   ===================================================== */
+/* ---------- SCROLL REVEAL ---------- */
 
 .reveal{
   opacity:0;
   transform:translateY(28px);
-
   transition:
     opacity .7s cubic-bezier(.16,.84,.44,1),
     transform .7s cubic-bezier(.16,.84,.44,1);
-
   will-change:opacity, transform;
 }
 
@@ -1058,9 +1025,7 @@ footer{
 }
 
 
-/* =====================================================
-   NAV LINK HOVER
-   ===================================================== */
+/* ---------- NAV LINK HOVER ---------- */
 
 .nav-links a{
   position:relative;
@@ -1087,21 +1052,15 @@ footer{
 }
 
 
-/* =====================================================
-   BUTTONS
-   ===================================================== */
+/* ---------- BUTTONS ---------- */
 
 .btn-contact{
-  transition:
-    transform .25s ease,
-    box-shadow .25s ease;
+  transition:transform .25s ease, box-shadow .25s ease;
 }
 
 .btn-contact:hover{
   transform:translateY(-2px) scale(1.04);
-
-  box-shadow:
-    0 10px 26px rgba(185,166,255,.35);
+  box-shadow:0 10px 26px rgba(185,166,255,.35);
 }
 
 .mode-toggle{
@@ -1113,9 +1072,7 @@ footer{
 }
 
 
-/* =====================================================
-   CARDS HOVER
-   ===================================================== */
+/* ---------- CARDS HOVER ---------- */
 
 .service-card,
 .review-card,
@@ -1130,21 +1087,12 @@ footer{
 .review-card:hover,
 .profile-card:hover{
   transform:translateY(-6px);
-
-  box-shadow:
-    0 22px 48px rgba(0,0,0,.45);
-
+  box-shadow:0 22px 48px rgba(0,0,0,.45);
   border-color:var(--purple);
 }
 
-
-/* =====================================================
-   PROJECT HOVER
-   ===================================================== */
-
 .project-media{
-  transition:
-    transform .5s cubic-bezier(.16,.84,.44,1);
+  transition:transform .5s cubic-bezier(.16,.84,.44,1);
 }
 
 .project:hover .project-media{
@@ -1160,9 +1108,7 @@ footer{
 }
 
 
-/* =====================================================
-   PILLS
-   ===================================================== */
+/* ---------- PILLS ---------- */
 
 .pill,
 .lang-pill{
@@ -1180,13 +1126,10 @@ footer{
 }
 
 
-/* =====================================================
-   LOGOS
-   ===================================================== */
+/* ---------- LOGOS ---------- */
 
 .exp-logo{
-  transition:
-    transform .35s cubic-bezier(.16,.84,.44,1);
+  transition:transform .35s cubic-bezier(.16,.84,.44,1);
 }
 
 .exp-item:hover .exp-logo{
@@ -1194,9 +1137,7 @@ footer{
 }
 
 
-/* =====================================================
-   CONTACT HOVER
-   ===================================================== */
+/* ---------- CONTACT ROW ---------- */
 
 .contact-row{
   transition:transform .25s ease;
@@ -1207,42 +1148,7 @@ footer{
 }
 
 
-/* =====================================================
-   RESPONSIVE
-   ===================================================== */
-
-@media (max-width:700px){
-
-  .exp-item,
-  .edu-item{
-    grid-template-columns:1fr;
-    gap:16px;
-  }
-
-  .exp-logo{
-    width:48px;
-    height:48px;
-  }
-
-  .contact-row{
-    align-items:flex-start;
-    flex-wrap:wrap;
-  }
-
-  .contact-label{
-    width:auto;
-  }
-
-  .contact-value{
-    width:100%;
-    margin-left:52px;
-  }
-}
-
-
-/* =====================================================
-   REDUCED MOTION
-   ===================================================== */
+/* ---------- REDUCED MOTION ---------- */
 
 @media (prefers-reduced-motion: reduce){
 
@@ -1260,5 +1166,36 @@ footer{
   *{
     transition-duration:.01ms !important;
     animation-duration:.01ms !important;
+  }
+}
+
+
+/* ---------- RESPONSIVE EXPERIENCE / EDUCATION / CONTACT ---------- */
+
+@media (max-width:700px){
+
+  .exp-item,
+  .edu-item{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .exp-logo{
+    width:50px;
+    height:50px;
+  }
+
+  .contact-row{
+    flex-wrap:wrap;
+  }
+
+  .contact-label{
+    width:auto;
+    min-width:90px;
+  }
+
+  .contact-value{
+    max-width:100%;
+    overflow-wrap:anywhere;
   }
 }
