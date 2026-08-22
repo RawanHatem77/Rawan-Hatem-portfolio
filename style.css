@@ -695,20 +695,15 @@ section{
 }
 
 
-/* =====================================================
-   EXPERIENCE
-   ===================================================== */
+/* ---------- EXPERIENCE ---------- */
 
 #experience{
   width:100%;
-  text-align:left;
 }
 
 #experience .section-eyebrow,
 #experience .section-title{
   text-align:left;
-  margin-left:0;
-  margin-right:0;
 }
 
 .exp-item{
@@ -717,6 +712,9 @@ section{
   gap:24px;
   padding:32px 0;
   border-top:1px solid var(--border);
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
 }
 
 .exp-logo{
@@ -764,20 +762,15 @@ section{
 }
 
 
-/* =====================================================
-   EDUCATION
-   ===================================================== */
+/* ---------- EDUCATION ---------- */
 
 #education{
   width:100%;
-  text-align:left;
 }
 
 #education .section-eyebrow,
 #education .section-title{
   text-align:left;
-  margin-left:0;
-  margin-right:0;
 }
 
 .edu-item{
@@ -786,6 +779,9 @@ section{
   gap:24px;
   padding:28px 0;
   border-top:1px solid var(--border);
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
 }
 
 .edu-item h4{
@@ -809,26 +805,22 @@ section{
 }
 
 
-/* =====================================================
-   LANGUAGES
-   ===================================================== */
+/* ---------- LANGUAGES ---------- */
 
 #languages{
   width:100%;
-  text-align:left;
 }
 
 #languages .section-eyebrow,
 #languages .section-title{
   text-align:left;
-  margin-left:0;
-  margin-right:0;
 }
 
 .lang-row{
   display:flex;
   flex-wrap:wrap;
   gap:12px;
+  justify-content:flex-start;
 }
 
 .lang-pill{
@@ -840,20 +832,15 @@ section{
 }
 
 
-/* =====================================================
-   CONTACT
-   ===================================================== */
+/* ---------- CONTACT ---------- */
 
 #contact{
   width:100%;
-  text-align:left;
 }
 
 #contact .section-eyebrow,
 #contact .section-title{
   text-align:left;
-  margin-left:0;
-  margin-right:0;
 }
 
 #contact > p{
@@ -862,6 +849,9 @@ section{
 
 .contact-list{
   border-top:1px solid var(--border);
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
 }
 
 .contact-row{
@@ -933,7 +923,6 @@ section{
 .copy-hint.show{
   opacity:1;
 }
-
 
 /* =====================================================
    FOOTER
