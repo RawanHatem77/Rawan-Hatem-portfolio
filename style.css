@@ -680,9 +680,9 @@ section{
 }
 
 #experience .section-eyebrow,
-#experience .section-title{
-  width:100%;
-  text-align:center;
+#experience .section-title {
+  width: 100%;
+  text-align: left;
 }
 
 .exp-item{
