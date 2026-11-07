@@ -204,23 +204,17 @@ img{
   margin-bottom:18px;
 }
 
-.hero-text h1,
-body.light .hero-text h1,
-body:not(.light) .hero-text h1 {
+.hero-text h1{
   font-size:64px;
   font-weight:800;
   line-height:1.05;
   letter-spacing:-1.5px;
   margin-bottom:20px;
-  color:#ffffff !important;
-  -webkit-text-fill-color:#ffffff !important;
-  background:none !important;
-  opacity:1 !important;
-  position:relative;
-  z-index:2;
+  color:#f2f2f0;
 }
+
 .hero-text p{
-  color:var(--text-dim);
+  color:#9a9a9e;
   font-size:17px;
   max-width:440px;
 }
